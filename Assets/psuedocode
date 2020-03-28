@@ -1,0 +1,32 @@
+Quiz Requirements:
+1. Timer that counts down from 120 seconds
+2. Multiple choice questions
+    a. Presented with 1 multiple choice question at a time
+    b. When answered correctly, move on to next question
+    c. If answered incorrectly, reduce time by 10 seconds and move on to next question
+    d. Game ends when timer = 0 OR all questions answered
+3. Score and user initials saved in local storage
+
+Plan of action:
+1. Start button triggers timer countdown and loads first question
+2. Questions are multiple choice:
+    a. If the correct answer is choosen, using addeventlistener("click"), the user moves on to the next question. There is no penalty.
+    b. Else if the user selects the incorrect choice, timer -10 seconds and user moves on to next question.
+    c. This continues for 5 questions.
+3. When questions are complete or timer = 0, the game ends.
+4. Score is displayed and user is prompted to enter initials.
+5. High scores are stored and displayed.
+
+Needs:
+
+<button>Start<button>
+Global var timer = 120
+
+var questions = [array {q&a}]
+loop through array and replace question each time an answer is selected.
+if user selects questions.answer present the next question,
+    else -10 from timer, present next question.
+
+
+setInterval (function, 1000)
+function(){
